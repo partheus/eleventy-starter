@@ -1,13 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="/css/main.css">
-        <meta charset="utf-8">
-        <title> {{pageTitle}}</title>
-    </head>
-    <body>
-        <h1>{{ pageTitle }}</h1>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <meta charset="utf-8" />
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/writing">Writing</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <h1 class="pagetitle">{{ pageTitle }}</h1>
 
-        {{ content }}
-    </body>
+    {{ content }}
+  </body>
 </html>

@@ -1,3 +1,32 @@
-body{
-    background-color: rgb(230, 227, 97);
+body {
+  margin: 60px auto;
+  width: 40%;
+  max-width: 60rem;
+  margin: 0 auto;
+  opacity: 97%;
+  background-color: #b2fcff;
+  font-family: "Zilla Slab", serif;
+}
+
+nav {
+    margin-top: 70px;
+  }
+  
+  
+  nav ul {
+    font-size: 1.2rem;
+    list-style: none !important;
+    font-weight: 600;
+  }
+  
+  nav ul li {
+    display: inline;
+    text-decoration: none !important;
+    padding-right: 2rem;
+  }
+
+.pagetitle {
+    font-size: 3rem;
+  color: #470938;
+  font-weight: 700;
 }
