@@ -21,4 +21,4 @@ The project is now ready to go live! Run the following command to bring up a loc
     
 Open http://localhost:8080 in a browser of your choice. If everything was done right, you should see the homepage of the starter blog! Screenshot attached below. You're now ready to start customizing the site according to your needs! For further help, check out the official 11ty docs here: https://www.11ty.dev/docs/
 
-[starter blog screenshot](https://github.com/partheus/eleventy-starter/blob/master/img/screenshot.png)
+[starter blog screenshot](/img/screenshot.png)
