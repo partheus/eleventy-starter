@@ -3,3 +3,12 @@ A simple template for myself to get familiar with the folder structure for eleve
 
 # Getting started:
 Run the following commands in your local terminal:
+
+`cd my-workspace`
+
+`git clone --depth=1 https://github.com/partheus/eleventy-starter.git my-eleventy-blog`
+
+`cd my-eleventy-blog`
+
+`npm install`
+
