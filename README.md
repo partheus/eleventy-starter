@@ -1,5 +1,5 @@
 # eleventy-starter
-A simple template for myself to get familiar with the folder structure for eleventy. The site is extremely barebones, with no JavaScript, just a couple lines of CSS/styling, no pagination or tags. If you're looking for a fool-proof solution for a text-heavy blog site, you're in the right place.
+A simple template for myself to get familiar with the folder structure for eleventy. The site is extremely barebones, with no JavaScript, just a couple lines of CSS/styling, no pagination or tags. If you're looking for a fool-proof solution for a text-heavy blog site, you're in the right place. View the live demo [here](eleventy-barebones-starter.netlify.app/).
 
 ## GitHub
 In case the GitHub ecosystem is unfamiliar to you, please check out the official [starter guide](https://guides.github.com/activities/hello-world/)! 
@@ -15,7 +15,7 @@ Run the following commands in your local terminal:
     
     npm install
 
-The project is now ready to go live! Run the following command to bring up a local environment with live reload:
+The project is now ready to go live! Run the following command to bring up a local environment with hot reload (any changes you make in the local text editor will reflect immediately in the browser window):
 
     npm run dev
     
