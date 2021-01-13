@@ -2,8 +2,6 @@
 layout: layout.liquid
 pageTitle: Writing
 ---
-
-
 {% for post in collections.posts %}
     <h3><a href="{{ post.url }}" class="link">{{ post.data.pageTitle }}</a></h3>
     <em>{{ post.date | date: "%Y-%m-%d" }}</em>
