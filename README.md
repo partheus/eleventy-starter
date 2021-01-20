@@ -40,7 +40,26 @@ Install the `npx` package manager using the following command:
 
     npm install -g npx
 
-Add a blog post with the default layout (an example is shown below)
+Add a blog post with the default layout (an example is shown below) with the file extension as `.md` inside `/writing/posts`.
 ![](/img/blog-layout-ss.png)
+
+Run the following command to compile the files:
+    
+    npx eleventy
+
+Then, run the following command to bring up the live reload site locally:
+    
+    npx eleventy --serve
+
+This command serves the same purpose as `npm run dev` as we saw earlier. You should be able to visit http://localhost:8080 and see your site all set up!
+
+## The colors and fonts
+
+- The master `css` file is located under `/css`. Any changes you make to this file will be reflected in your site immediately.
+
+Happy blogging!
+
+
+
 
 
