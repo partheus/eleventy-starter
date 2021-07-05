@@ -1,5 +1,5 @@
 <h1>eleventy-starter</h1>
-<p>A simple template for myself to get familiar with the folder structure for eleventy. The site is extremely barebones, with no JavaScript, just a couple lines of CSS/styling, no pagination or tags. If you're looking for a fool-proof solution for a text-heavy blog site, you're in the right place. View the live demo <a href="eleventy-barebones-starter.netlify.app/">here</a>.</p>
+<p>A simple template for myself to get familiar with the folder structure for eleventy. The site is extremely barebones, with just a couple lines of CSS/styling, without pagination or tags. If you're looking for a fool-proof solution for a text-heavy blog site, you're in the right place. View the live demo <a href="https://eleventy-barebones-starter.netlify.app/">here</a>.</p>
 <h2>GitHub</h2>
 <p>In case the GitHub ecosystem is unfamiliar to you, please check out the official <a href="https://guides.github.com/activities/hello-world/">starter guide</a>!</p>
 <h1>Getting started:</h1>
@@ -16,4 +16,34 @@ npm install
 <pre><code>npm run dev
 </code></pre>
 <p>Open http://localhost:8080 in a browser of your choice. If everything was done right, you should see the homepage of the starter blog! Screenshot attached below. You're now ready to start customizing the site according to your needs! For further help, check out the official 11ty docs here: https://www.11ty.dev/docs/</p>
-<p><img src="/img/screenshot.png" alt=""></p>
+<p><img src="/img/homepage-ss.png" alt=""></p>
+<h2>How it works - The site itself</h2>
+<ul>
+<li>EleventyJS works as a static site generator. In simple terms, this means that all loading is done superfast, and html files are generated immediately on compilation. There is a set layout for these files, which then become webpages in the browser.</li>
+<li>The webpages are all based on a certain template. For this site, I've used <code>liquid</code> as the templating language. In the <code>_includes</code> folder, there is a simple <code>layout.liquid</code> file. All html files generated from this template will have the same exact layout.</li>
+<li>You can create custom templates! For example, my personal website (https://parth.ninja) has several templates, including a custom footer and header.</li>
+<li>When you run the commands to compile all files, a set of ready-to-be-published files are generated in the <code>_site</code> folder.</li>
+<li>Other resources are stored in the <code>/css</code> and <code>/img</code> folders. The <code>/writing/posts</code> folder is explained in the next section.</li>
+</ul>
+<h2>Blog posts</h2>
+<ul>
+<li>Since this a blog site, you will need to add blog posts from time to time. These will be saved in the <code>/writing/posts</code> folder.</li>
+<li>The easiest way I've found of doing this is as follows:</li>
+</ul>
+<p>Install the <code>npx</code> package manager using the following command:</p>
+<pre><code>npm install -g npx
+</code></pre>
+<p>Add a blog post with the default layout (an example is shown below) with the file extension as <code>.md</code> inside <code>/writing/posts</code>.
+<img src="/img/blog-layout-ss.png" alt=""></p>
+<p>Run the following command to compile the files:</p>
+<pre><code>npx eleventy
+</code></pre>
+<p>Then, run the following command to bring up the live reload site locally:</p>
+<pre><code>npx eleventy --serve
+</code></pre>
+<p>This command serves the same purpose as <code>npm run dev</code> as we saw earlier. You should be able to visit http://localhost:8080 and see your site all set up!</p>
+<h2>The colors and fonts</h2>
+<ul>
+<li>The master <code>css</code> file is located under <code>/css</code>. Any changes you make to this file will be reflected in your site immediately.</li>
+</ul>
+<p>Happy blogging!</p>
